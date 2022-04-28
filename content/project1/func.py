@@ -30,7 +30,8 @@ def find_nearest(array, value):
 def dens_prof(Rbin,Rins,galdist,mp):
     prof=[],[]
     Rmax=np.amax(galdist)
-    for n in range(2,120):
+    for n in range(2,100):
+        n=n/100
         R1=Rins
         if (R1>Rmax):
             break
